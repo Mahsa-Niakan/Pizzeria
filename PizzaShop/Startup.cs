@@ -14,7 +14,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PizzeriaApp1.DataLayer;
 
-using PizzeriaApp1.DomainClass;
 using PizzeriaApp1.Services.Services;
 using PizzeriaApp1.Services.Repositories;
 namespace PizzaShop

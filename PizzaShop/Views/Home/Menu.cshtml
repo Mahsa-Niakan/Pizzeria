@@ -1,0 +1,52 @@
+﻿@using System.Security.Claims
+@model IEnumerable<PizzeriaApp1.DomainClass.Pizza>
+@{
+
+    ViewData["Title"] = "Menu";
+}
+
+
+@*<h1>@User.Identity.Name</h1>
+    <h2>@User.FindFirstValue(ClaimTypes.NameIdentifier)</h2>*@
+<!-- Collection -->
+
+
+<div class="container">
+
+    <div id="Container" class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-6 col-lg-3 mix web ui">
+                <div class="collection-item">
+                    <div class="collection-top">
+                        <img src=@Url.Content("~/assets/img/ProductPhotos/"+ @item.ImageUrl +".PNG") alt="Collection">
+                        <ul>
+                            @item.Description
+                        </ul>
+                        <div class="add-cart">
+                            <a asp-controller="Orders" asp-action="AddToCart" asp-route-id="@item.Id">
+                                <i class='bx bxs-cart'></i>
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                    <div class="collection-bottom">
+                        <h3>@item.Name</h3>
+                        <ul>
+                            <li>
+                                <span>@item.PriceInDollar $</span>
+                                <span>@item.PriceInEuro €</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+</div>
+
+
+
+

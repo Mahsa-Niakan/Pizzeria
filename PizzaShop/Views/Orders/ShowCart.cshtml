@@ -1,0 +1,58 @@
+﻿@model IEnumerable<PizzaShop.Models.ViewModels.ShowCartViewModel>
+<!-- Cart -->
+<section class="cart-area ptb-100">
+    <div class="container">
+        <div class="cart-wrap">
+            @if (Model.Any())
+            {
+                <table class="table">
+                    <thead class="thead">
+                        <tr>
+                            <th class="table-head" scope="col">Photo</th>
+                            <th class="table-head" scope="col">Pizza</th>
+                            <th class="table-head" scope="col">Count</th>
+                            <th class="table-head" scope="col">Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <th class="table-item" scope="row">
+                                    <img src=@Url.Content("~/assets/img/ProductPhotos/"+ @item.ImageName +".PNG") alt="Menu">
+                                </th>
+                                <td>@item.Title</td>
+                                <td>@item.Count</td>
+                                <td>
+
+                                    <a class="btn btn-sm btn-success" href="/Orders/Command/@item.OrderDetailId?command=up">+</a>
+                                    <a class="btn btn-sm btn-warning" href="/Orders/Command/@item.OrderDetailId?command=down">-</a>
+                                    <a asp-controller="Orders" asp-action="delete" asp-route-id="@item.OrderDetailId">
+                                        remove
+
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <p class="text-muted text-center">Cart is Empty</p>
+            }
+            @if (Model.Any())
+            {
+                <div class="shop-back">
+                    <a asp-action="Menu" asp-controller="home">Continue Adding More Pizzas To Cart?</a>
+                </div>
+                <div class="total-shopping">
+
+                    <a class="btn btn-sm btn-info" asp-action="showBill" asp-controller="orders">Submit Order</a>
+                </div>
+            }
+        </div>
+
+    </div>
+</section>
+<!-- End Cart -->

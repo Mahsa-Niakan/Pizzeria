@@ -1,0 +1,52 @@
+﻿@model IEnumerable<PizzaShop.Models.ViewModels.ShowOrderViewModel>
+
+<table class="table">
+    <thead class="thead">
+        <tr>
+
+            <th class="table-head" scope="col">Pizza</th>
+            <th class="table-head" scope="col">Count</th>
+            <th class="table-head" scope="col">price In euro</th>
+            <th class="table-head" scope="col">price In dollar</th>
+            <th class="table-head" scope="col">Total euro</th>
+            <th class="table-head" scope="col">Total dollar</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                @{ int a = item.OrderId;}
+                <td>@item.title</td>
+                <td>@item.Count</td>
+                <td>@item.PriceInEuro</td>
+                <td>@item.PriceInDollar</td>
+                <td>@item.SumEuro</td>
+                <td>@item.SumDollar</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="shop-back">
+    <a asp-action="Menu" asp-controller="home">Continue Adding More Pizzas To Cart?</a>
+</div>
+<div class="total-shopping">
+    <h3>
+        Total Price
+        </br>
+        <span>
+            @Model.Sum(s => s.SumDollar).ToString("#,0 dollars") + 12$ shipping
+            </br>
+            @Model.Sum(s => s.SumEuro).ToString("#,0 Euro") + 9€ shipping
+        </span>
+    </h3>
+
+    <div class="total-shopping">
+        <a class="btn btn-sm btn-info" asp-action="checkout" asp-controller="orders">Submit Order</a>
+    </div>
+</div>
