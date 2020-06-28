@@ -12,7 +12,11 @@ using PizzaShop.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PizzeriaApp1.DataLayer;
 
+using PizzeriaApp1.DomainClass;
+using PizzeriaApp1.Services.Services;
+using PizzeriaApp1.Services.Repositories;
 namespace PizzaShop
 {
     public class Startup
@@ -30,6 +34,12 @@ namespace PizzaShop
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<PizzeriaDbContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("DefaultConnection")));
+            services.AddTransient<IPizzaRepository, PizzaRepository>();
+            services.AddTransient<IOrderRepository, OrderRepository>();
+            services.AddTransient<IOrderDetailRepository, OrderDetailDetailRepository>();
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();

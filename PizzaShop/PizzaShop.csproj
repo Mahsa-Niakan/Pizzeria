@@ -14,4 +14,12 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Mahsa\Desktop\PizzeriaApp\PizzeriaApp1\PizzeriaApp1.DataLayer\PizzeriaApp1.DataLayer.csproj" />
+    <ProjectReference Include="C:\Users\Mahsa\Desktop\PizzeriaApp\PizzeriaApp1\PizzeriaApp1.DomainClass\PizzeriaApp1.DomainClass.csproj" />
+    <ProjectReference Include="C:\Users\Mahsa\Desktop\PizzeriaApp\PizzeriaApp1\PizzeriaApp1.Services\PizzeriaApp1.Services.csproj" />
+    <ProjectReference Include="C:\Users\Mahsa\Desktop\PizzeriaApp\PizzeriaApp1\PizzeriaApp1.ViewModels\PizzeriaApp1.ViewModels.csproj" />
+  </ItemGroup>
+
 </Project>

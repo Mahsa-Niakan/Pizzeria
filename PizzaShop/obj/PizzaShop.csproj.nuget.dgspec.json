@@ -4,6 +4,257 @@
     "N:\\PizzaShop\\Pizzeria\\PizzaShop\\PizzaShop.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DataLayer\\PizzeriaApp1.DataLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DataLayer\\PizzeriaApp1.DataLayer.csproj",
+        "projectName": "PizzeriaApp1.DataLayer",
+        "projectPath": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DataLayer\\PizzeriaApp1.DataLayer.csproj",
+        "packagesPath": "C:\\Users\\Mahsa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DataLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mahsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DomainClass\\PizzeriaApp1.DomainClass.csproj": {
+                "projectPath": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DomainClass\\PizzeriaApp1.DomainClass.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DomainClass\\PizzeriaApp1.DomainClass.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DomainClass\\PizzeriaApp1.DomainClass.csproj",
+        "projectName": "PizzeriaApp1.DomainClass",
+        "projectPath": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DomainClass\\PizzeriaApp1.DomainClass.csproj",
+        "packagesPath": "C:\\Users\\Mahsa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DomainClass\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mahsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.Services\\PizzeriaApp1.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.Services\\PizzeriaApp1.Services.csproj",
+        "projectName": "PizzeriaApp1.Services",
+        "projectPath": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.Services\\PizzeriaApp1.Services.csproj",
+        "packagesPath": "C:\\Users\\Mahsa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mahsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DataLayer\\PizzeriaApp1.DataLayer.csproj": {
+                "projectPath": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DataLayer\\PizzeriaApp1.DataLayer.csproj"
+              },
+              "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DomainClass\\PizzeriaApp1.DomainClass.csproj": {
+                "projectPath": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DomainClass\\PizzeriaApp1.DomainClass.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.ViewModels\\PizzeriaApp1.ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.ViewModels\\PizzeriaApp1.ViewModels.csproj",
+        "projectName": "PizzeriaApp1.ViewModels",
+        "projectPath": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.ViewModels\\PizzeriaApp1.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\Mahsa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.ViewModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mahsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "N:\\PizzaShop\\Pizzeria\\PizzaShop\\PizzaShop.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,7 +277,20 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DataLayer\\PizzeriaApp1.DataLayer.csproj": {
+                "projectPath": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DataLayer\\PizzeriaApp1.DataLayer.csproj"
+              },
+              "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DomainClass\\PizzeriaApp1.DomainClass.csproj": {
+                "projectPath": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.DomainClass\\PizzeriaApp1.DomainClass.csproj"
+              },
+              "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.Services\\PizzeriaApp1.Services.csproj": {
+                "projectPath": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.Services\\PizzeriaApp1.Services.csproj"
+              },
+              "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.ViewModels\\PizzeriaApp1.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\Mahsa\\Desktop\\PizzeriaApp\\PizzeriaApp1\\PizzeriaApp1.ViewModels\\PizzeriaApp1.ViewModels.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
